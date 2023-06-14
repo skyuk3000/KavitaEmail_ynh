@@ -2,7 +2,7 @@
   "TokenKey": "super secret unguessable key",
   "Serilog": {
     "Using":  [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
-    "MinimumLevel": "Debug",
+    "MinimumLevel": "Information",
     "WriteTo": [
       {
         "Name": "Console",
