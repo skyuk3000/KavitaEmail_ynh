@@ -16,15 +16,6 @@ source /usr/share/yunohost/helpers
 upgrade_type=$(ynh_check_app_version_changed)
 
 #=================================================
-# STORE SETTINGS
-#=================================================
-
-public_ip4="$(curl -s ip.yunohost.org)" || true
-fingerprint=$(cat /etc/opt/simplex/fingerprint)
-ynh_app_setting_set --app=$app --key=public_ip4 --value=$public_ip4
-ynh_app_setting_set --app=$app --key=fingerprint --value=$fingerprint
-
-#=================================================
 # STANDARD UPGRADE STEPS
 #=================================================
 # STOP SYSTEMD SERVICE
@@ -46,8 +37,20 @@ then
 fi
 
 chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-chmod +x $install_dir/smp-server
+chown -R $app:$app "$install_dir"
+chmod +x $install_dir/KavitaEmail
+
+#=================================================
+# MODIFY A CONFIG FILE
+#=================================================
+ynh_script_progression --message="Modifying a config file..." --weight=1
+
+key=$(ynh_string_random --length=176)
+url_path=${path#/}
+ynh_add_config --template="../conf/appsettings.json.example" --destination="$install_dir/config/appsettings.json"
+
+chmod 600 "$install_dir/config/appsettings.json"
+chown $app:$app "$install_dir/config/appsettings.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
