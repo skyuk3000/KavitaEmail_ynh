@@ -16,47 +16,32 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Kavita is a fast, feature rich, cross platform reading server. Built with a focus for manga and the goal of being a full solution for all your reading needs. Setup your own server and share your reading collection with your friends and family.
+This is a simple email relay server that handles emails from Kavita application. By default, Kavita installations will use the Kavita hosted email service. However, if a user wants to setup their own SMTP service, then they can run their own instance of this microService.
 
-### Features
+### Settup
 
-- Extensive File support
-- Manga/Comic Reader
-- Book Reader
-- User Management and Sharing
-- Cross Platform with no dependencies - Everything in the box
-- Full-text search to quickly find what you want to read
-- Mixed media Libraries - Light Novels and Manga can be right next to each other
-- Fast and efficient library scans. Don't perform I/O if the underlying file hasn't changed.
-- OPDS-PS Support
-
+Once you have set up your KavitaEmail service, you can now link your Kavita instance with KavitaEmail service. Navigate to Server Settings and under Email, you can change the URL to your local service (and port if needed). Press Test to ensure it works; as of Kavita-email v0.1.15.0 and Kavita v0.7.1.35 this will send an actual test email to the admin account's email address.
 
 **Shipped version:** 0.1.19.0~ynh2
-
-**Demo:** https://demo.kavitareader.com/
-
-## Screenshots
-
-![Screenshot of Kavita](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
 * Official app website: <www.kavitareader.com>
 * Official admin documentation: <https://wiki.kavitareader.com/en>
-* Upstream app code repository: <https://github.com/Kareadita/Kavita>
+* Upstream app code repository: <https://github.com/Kareadita/KavitaEmail>
 * YunoHost documentation for this app: <https://yunohost.org/app_kavita>
-* Report a bug: <https://github.com/YunoHost-Apps/kavita_ynh/issues>
+* Report a bug: <https://github.com/YunoHost-Apps/kavitaEmail_ynh/issues>
 
 ## Developer info
 
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/kavita_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/kavitaEmail_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 
 ``` bash
-sudo yunohost app install https://github.com/YunoHost-Apps/kavita_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/kavitaEmail_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade kavita -u https://github.com/YunoHost-Apps/kavita_ynh/tree/testing --debug
+sudo yunohost app upgrade kavita -u https://github.com/YunoHost-Apps/kavitaEmail_ynh/tree/testing --debug
 ```
 
 **More info regarding app packaging:** <https://yunohost.org/packaging_apps>
