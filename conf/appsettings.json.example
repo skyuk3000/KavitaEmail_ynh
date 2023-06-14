@@ -28,9 +28,9 @@
     }
   },
   "SMTP": {
-    "Host": "localhost",
+    "Host": "__DOMAIN__",
     "Port": "25",
-    "UserName": "",
+    "UserName": "__APP__@__DOMAIN__",
     "Password": "",
     "SenderAddress": "__APP__@__DOMAIN__",
     "SenderDisplayName": "__APP__",
