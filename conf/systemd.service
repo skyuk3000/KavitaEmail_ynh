@@ -1,5 +1,5 @@
 [Unit]
-Description=SimpleX: Messaging Protocol Server
+Description=Kavita Email: Media server for your comics
 After=network.target
 
 [Service]
@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/smp-server start
+ExecStart=__INSTALL_DIR__/KavitaEmail
 Restart=always
 RestartSec=3
 KillSignal=SIGINT
