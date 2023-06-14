@@ -1,0 +1,23 @@
+# https://github.com/YunoHost/example_ynh/blob/master/config_panel.toml.example
+
+version = "1.0"
+
+[main]
+name.en = "Main configuration"
+name.fr = "Configuration principale"
+services = ["__APP__"]
+
+    [main.config]
+    name = "Configuration Options"
+
+        [main.config.default_from_email]
+        ask = "from email"
+        type = "email"
+        help = "Default email address to use for various automated emails."
+        bind = "default_from_email:__FINALPATH__/settings.py"
+
+        [main.config.admin_email]
+        ask = "ADMIN email"
+        type = "email"
+        help = "EMail address for error emails."
+        bind = "admin_email:__FINALPATH__/settings.py"
