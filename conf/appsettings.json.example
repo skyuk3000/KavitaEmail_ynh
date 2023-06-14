@@ -14,8 +14,7 @@
           "path": "config/logs/kavitaemail.log",
           "outputTemplate": "[KavitaEmail] [{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {CorrelationId} {ThreadId}] [{Level}] {SourceContext} {Message:lj}{NewLine}{Exception}"
         }
-      },
-      { "Name": "Seq", "Args": { "serverUrl": "http://localhost:__PORT__", "apiKey": "" } }
+      }
     ],
     "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
     "Destructure": [
