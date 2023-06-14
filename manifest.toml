@@ -2,7 +2,7 @@ packaging_format = 2
 
 id = "KavitaEmail"
 name = "Kavita Email"
-description.en = "TBA"
+description.en = "This is a simple email relay server that handles emails from Kavita application"
 description.fr = "TBA"
 
 version = "0.1.19.0~ynh1"
@@ -11,8 +11,8 @@ maintainers = ["TBA"]
 
 [upstream]
 license = "MIT"
-website = "https://simplex.chat/"
-admindoc = "https://wiki.kavitareader.com/en"
+website = "https://kavitareader.com/"
+admindoc = "https://wiki.kavitareader.com/en/guides/misc/email"
 code = "https://github.com/Kareadita/KavitaEmail"
 cpe = "TBA"
 fund = "https://opencollective.com/Kavita#backer"
