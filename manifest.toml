@@ -1,6 +1,6 @@
 packaging_format = 2
 
-id = "KavitaEmail"
+id = "kavitaemail"
 name = "Kavita Email"
 description.en = "This is a simple email relay server that handles emails from Kavita application"
 description.fr = "TBA"
