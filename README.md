@@ -5,20 +5,20 @@ It shall NOT be edited by hand.
 
 # Kavita Email for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/kavita.svg)](https://dash.yunohost.org/appci/app/kavita) ![Working status](https://ci-apps.yunohost.org/ci/badges/kavita.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kavita.maintain.svg)
+[![Integration level](https://dash.yunohost.org/integration/kavitaEmail.svg)](https://dash.yunohost.org/appci/app/kavitaEmail) ![Working status](https://ci-apps.yunohost.org/ci/badges/kavita.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kavitaEmail.maintain.svg)
 
-[![Install Kavita with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kavita)
+[![Install Kavita with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kavitaEmail)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
-> *This package allows you to install Kavita quickly and simply on a YunoHost server.
+> *This package allows you to install Kavita Email quickly and simply on a YunoHost server.
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
 
 ## Overview
 
 This is a simple email relay server that handles emails from Kavita application. By default, Kavita installations will use the Kavita hosted email service. However, if a user wants to setup their own SMTP service, then they can run their own instance of this microService.
 
-### Settup
+### Setup
 
 Once you have set up your KavitaEmail service, you can now link your Kavita instance with KavitaEmail service. Navigate to Server Settings and under Email, you can change the URL to your local service (and port if needed). Press Test to ensure it works; as of Kavita-email v0.1.15.0 and Kavita v0.7.1.35 this will send an actual test email to the admin account's email address.
 
