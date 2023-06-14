@@ -15,7 +15,7 @@
           "outputTemplate": "[KavitaEmail] [{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {CorrelationId} {ThreadId}] [{Level}] {SourceContext} {Message:lj}{NewLine}{Exception}"
         }
       },
-      { "Name": "Seq", "Args": { "serverUrl": "http://localhost:5341", "apiKey": "" } }
+      { "Name": "Seq", "Args": { "serverUrl": "http://localhost:__PORT__", "apiKey": "" } }
     ],
     "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
     "Destructure": [
@@ -28,14 +28,14 @@
     }
   },
   "SMTP": {
-    "Host": localhost,
-    "Port": 25,
+    "Host": "localhost",
+    "Port": "25",
     "UserName": "",
     "Password": "",
-    "SenderAddress": '__APP__@__DOMAIN__',
-    "SenderDisplayName": '__APP__',
+    "SenderAddress": "__APP__@__DOMAIN__",
+    "SenderDisplayName": "__APP__",
     "AllowSendTo": true,
-    "SizeLimit": 26214400
-    "secure" = false
+    "SizeLimit": 26214400,
+    "EnableSsl":false
   }
 }
