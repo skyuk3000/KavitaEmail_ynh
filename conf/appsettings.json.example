@@ -28,13 +28,14 @@
     }
   },
   "SMTP": {
-    "Host": __URL_PATH__,
-    "Port": __PORT__,
+    "Host": localhost,
+    "Port": 25,
     "UserName": "",
     "Password": "",
-    "SenderAddress": "",
-    "SenderDisplayName": "",
+    "SenderAddress": '__APP__@__DOMAIN__',
+    "SenderDisplayName": '__APP__',
     "AllowSendTo": true,
     "SizeLimit": 26214400
+    "secure" = false
   }
 }
