@@ -20,7 +20,7 @@ fund = "https://opencollective.com/Kavita#backer"
 [integration]
 yunohost = ">= 11.1.19"
 architectures = ["amd64", "arm64", "armhf"]
-multi_instance = true
+multi_instance = false
 ldap = "not_relevant"
 sso = "not_relevant"
 disk = "50M"
@@ -37,7 +37,7 @@ ram.runtime = "250M"
     [install.smtp_port]
     ask = "Edit SMTP Port"
     type = "number"
-    default = "22"
+    default = "25"
     help = "Edit SMTP Port"
 
     [install.smtp_username]
