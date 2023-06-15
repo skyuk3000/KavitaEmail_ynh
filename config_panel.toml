@@ -16,22 +16,18 @@ services = ["__APP__"]
         ask = "Edit SMTP Port"
         type = "number"
         help = "Edit SMTP Port"
-        bind = "smtp_port:/var/www/__APP__/config/appsettings.json"
 
         [main.config.smtp_username]
         ask = "Edit SMTP Username"
         type = "string"
         help = "Edit SMTP Username"
-        bind = "smtp_username:/var/www/__APP__/config/appsettings.json"
         
         [main.config.smtp_password]
         ask = "Edit SMTP Password"
         type = "password"
         help = "Edit SMTP Password"
-        bind = "smtp_password:/var/www/__APP__/config/appsettings.json"
         
         [main.config.smtp_sender_address]
         ask = "Edit SMTP Sender address"
         type = "string"
         help = "Edit SMTP Sender address"
-        bind = "smtp_sender_address:/var/www/__APP__/config/appsettings.json"
