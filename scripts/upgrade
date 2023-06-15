@@ -14,7 +14,7 @@ source /usr/share/yunohost/helpers
 ynh_script_progression --message="Ensuring downward compatibility..."
 
 # If smtp_host doesn't exist, create it
-if [ -z "$smtp_host" ]; then
+if [ -z "${smtp_host":-} ]; then
 	smtp_host=""
 	ynh_app_setting_set --app=$app --key=smtp_host --value=$smtp_host 
 fi
