@@ -10,33 +10,33 @@ name = "__APP__ configuration"
         ask = "Edit SMTP Host"
         type = "string"
         help = "Edit SMTP Host"
-        bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
+        bind = "SMTP_HOST:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
         
         [main.options.SMTP_port]
         ask = "Edit SMTP Port"
         type = "number"
         help = "Edit SMTP Port"
-        bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
+        bind = "SMTP_port:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
 
         [main.options.SMTP_USERNAME]
         ask = "Edit SMTP Username"
         type = "string"
         help = "Edit SMTP Username"
-        bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
+        bind = "SMTP_USERNAME:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
         
         [main.options.SMTP_PASSWORD]
         ask = "Edit SMTP Password"
         type = "password"
         help = "Edit SMTP Password"
-        bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
+        bind = "SMTP_PASSWORD:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
         
         [main.options.SMTP_SENDER_ADDRESS]
         ask = "Edit SMTP Sender address"
         type = "string"
         help = "Edit SMTP Sender address"
-        bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
+        bind = "SMTP_SENDER_ADDRESS:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
