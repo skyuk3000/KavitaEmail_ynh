@@ -20,7 +20,7 @@ fund = "https://opencollective.com/Kavita#backer"
 [integration]
 yunohost = ">= 11.1.19"
 architectures = ["amd64", "arm64", "armhf"]
-multi_instance = false
+multi_instance = true
 ldap = "not_relevant"
 sso = "not_relevant"
 disk = "50M"
