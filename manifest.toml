@@ -50,10 +50,9 @@ ram.runtime = "250M"
     help = "Edit SMTP Username"
 
     [install.SMTP_PASSWORD]
-    help.en = "Enter the RCON password"
+    help.en = "Enter SMTP password"
     help.fr = "Entrer le mot de passe RCON"
     type = "password"
-    help = "Edit SMTP Password"
 
     [install.SMTP_SENDER_ADDRESS]
     ask = "Edit SMTP Sender address"
