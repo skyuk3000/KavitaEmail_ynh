@@ -11,24 +11,28 @@ services = ["__APP__"]
         ask = "Edit SMTP Host"
         type = "string"
         help = "Edit SMTP Host"
+        bind = "Host:/var/www/kavitaemail/config/appsettings.json"
         
         [main.config.smtp_port]
         ask = "Edit SMTP Port"
         type = "number"
         help = "Edit SMTP Port"
-        bind = "port:/var/www/kavitaemail/config/appsettings.json"
+        bind = "Port:/var/www/kavitaemail/config/appsettings.json"
 
         [main.config.smtp_username]
         ask = "Edit SMTP Username"
         type = "string"
         help = "Edit SMTP Username"
+        bind = "UserName:/var/www/kavitaemail/config/appsettings.json"
         
         [main.config.smtp_password]
         ask = "Edit SMTP Password"
         type = "password"
         help = "Edit SMTP Password"
+        bind = "Password:/var/www/kavitaemail/config/appsettings.json"
         
         [main.config.smtp_sender_address]
         ask = "Edit SMTP Sender address"
         type = "string"
         help = "Edit SMTP Sender address"
+        bind = "SenderAddress:/var/www/kavitaemail/config/appsettings.json"
