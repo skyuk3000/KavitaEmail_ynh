@@ -43,7 +43,7 @@ ram.runtime = "250M"
     [install.SMTP_USERNAME]
     ask = "Edit SMTP Username"
     type = "string"
-    default = "Username"
+    default = "User"
     help = "Edit SMTP Username"
 
     [install.SMTP_PASSWORD]
