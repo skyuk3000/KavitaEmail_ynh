@@ -1,42 +1,38 @@
 version = "1.0"
 
 [main]
-name = "__APP__ configuration"
+name = "Kavita Email configuration"
+services = ["__APP__"]
 
-    [main.options]
+    [main.config]
     name = "Configuration Options"
     
-        [main.options.SMTP_HOST]
+        [main.config.smtp_host]
         ask = "Edit SMTP Host"
         type = "string"
         help = "Edit SMTP Host"
-        bind = "SMTP_HOST:__FINALPATH__/config/appsettings.json"
-        services = [ '__APP__' ]
+        bind = "smtp_host:__FINALPATH__/config/appsettings.json"
         
-        [main.options.SMTP_port]
+        [main.config.smtp_port]
         ask = "Edit SMTP Port"
         type = "number"
         help = "Edit SMTP Port"
-        bind = "SMTP_port:__FINALPATH__/config/appsettings.json"
-        services = [ '__APP__' ]
+        bind = "smtp_port:__FINALPATH__/config/appsettings.json"
 
-        [main.options.SMTP_USERNAME]
+        [main.config.smtp_username]
         ask = "Edit SMTP Username"
         type = "string"
         help = "Edit SMTP Username"
-        bind = "SMTP_USERNAME:__FINALPATH__/config/appsettings.json"
-        services = [ '__APP__' ]
+        bind = "smtp_username:__FINALPATH__/config/appsettings.json"
         
-        [main.options.SMTP_PASSWORD]
+        [main.config.smtp_password]
         ask = "Edit SMTP Password"
         type = "password"
         help = "Edit SMTP Password"
-        bind = "SMTP_PASSWORD:__FINALPATH__/config/appsettings.json"
-        services = [ '__APP__' ]
+        bind = "smtp_password:__FINALPATH__/config/appsettings.json"
         
-        [main.options.SMTP_SENDER_ADDRESS]
+        [main.config.smtp_sender_address]
         ask = "Edit SMTP Sender address"
         type = "string"
         help = "Edit SMTP Sender address"
-        bind = "SMTP_SENDER_ADDRESS:__FINALPATH__/config/appsettings.json"
-        services = [ '__APP__' ]
+        bind = "smtp_sender_address:__FINALPATH__/config/appsettings.json"
