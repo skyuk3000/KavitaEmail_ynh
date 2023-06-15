@@ -5,9 +5,26 @@
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
+
+#=================================================
+# RETRIEVE ARGUMENTS FROM THE MANIFEST
+#=================================================
+smtp_host=""
+smtp_port=22
+smtp_username=""
+smtp_password=""
+smtp_sender_address=""
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+ynh_app_setting_set --app=$app --key=smtp_host --value=$smtp_host
+ynh_app_setting_set --app=$app --key=smtp_port --value=$smtp_port
+ynh_app_setting_set --app=$app --key=smtp_username --value=$smtp_username
+ynh_app_setting_set --app=$app --key=smtp_password --value=$smtp_password
+ynh_app_setting_set --app=$app --key=smtp_sender_address --value=$smtp_sender_address
 
 #=================================================
 # CHECK VERSION
