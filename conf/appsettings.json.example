@@ -27,11 +27,11 @@
     }
   },
   "SMTP": {
-    "Host": "__DOMAIN__",
-    "Port": "25",
-    "UserName": "__APP__@__DOMAIN__",
-    "Password": "",
-    "SenderAddress": "__APP__@__DOMAIN__",
+    "Host": "__SMTP_HOST__",
+    "Port": "__SMTP_PORT__",
+    "UserName": "__SMTP_USERNAME__",
+    "Password": "__SMTP_PASSWORD__",
+    "SenderAddress": "__SMTP_SENDER_ADDRESS__",
     "SenderDisplayName": "__APP__",
     "AllowSendTo": true,
     "SizeLimit": 26214400,
