@@ -77,14 +77,14 @@ chmod +x $install_dir/KavitaEmail
 #=================================================
 # MODIFY A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Modifying a config file..." --weight=1
-
-key=$(ynh_string_random --length=176)
-url_path=${path#/}
-ynh_add_config --template="../conf/appsettings.json.example" --destination="$install_dir/config/appsettings.json"
-
-chmod 600 "$install_dir/config/appsettings.json"
-chown $app:$app "$install_dir/config/appsettings.json"
+#ynh_script_progression --message="Modifying a config file..." --weight=1
+#
+#key=$(ynh_string_random --length=176)
+#url_path=${path#/}
+#ynh_add_config --template="../conf/appsettings.json.example" --destination="$install_dir/config/appsettings.json"
+#
+#chmod 600 "$install_dir/config/appsettings.json"
+#chown $app:$app "$install_dir/config/appsettings.json"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
