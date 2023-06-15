@@ -15,8 +15,8 @@ source /usr/share/yunohost/helpers
 smtp_host=$YNH_APP_ARG_SMTP_HOST
 smtp_port=$YNH_APP_ARG_SMTP_PORT
 smtp_username=$YNH_APP_ARG_SMTP_USERNAME
-smtp_password=$YNH_APP_ARG_smtp_password
-smtp_sender_address=$YNH_APP_ARG_SMTP_PASSWORD
+smtp_password=$YNH_APP_ARG_SMTP_PASSWORD
+smtp_sender_address=$YNH_APP_ARG_SMTP_SENDER_ADDRESS
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
