@@ -9,7 +9,6 @@ name = "__APP__ configuration"
         [main.options.SMTP_HOST]
         ask = "Edit SMTP Host"
         type = "string"
-        default = "__DOMAIN__"
         help = "Edit SMTP Host"
         bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
@@ -17,7 +16,6 @@ name = "__APP__ configuration"
         [main.options.SMTP_port]
         ask = "Edit SMTP Port"
         type = "number"
-        default = "22"
         help = "Edit SMTP Port"
         bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
@@ -25,7 +23,6 @@ name = "__APP__ configuration"
         [main.options.SMTP_USERNAME]
         ask = "Edit SMTP Username"
         type = "string"
-        default = "User"
         help = "Edit SMTP Username"
         bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
@@ -40,7 +37,6 @@ name = "__APP__ configuration"
         [main.options.SMTP_SENDER_ADDRESS]
         ask = "Edit SMTP Sender address"
         type = "string"
-        default = "__APP__@__DOMAIN__"
         help = "Edit SMTP Sender address"
         bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
