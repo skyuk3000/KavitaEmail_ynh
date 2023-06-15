@@ -33,7 +33,6 @@ name = "__APP__ configuration"
         [main.options.SMTP_PASSWORD]
         ask = "Edit SMTP Password"
         type = "password"
-        default = "Password"
         help = "Edit SMTP Password"
         bind = "allow_unencrypted_doh:__FINALPATH__/config/appsettings.json"
         services = [ '__APP__' ]
