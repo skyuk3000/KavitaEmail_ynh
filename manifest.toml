@@ -1,4 +1,4 @@
-packaging_format = 2
+amplepackaging_format = 2
 
 id = "kavitaemail"
 name = "Kavita Email"
@@ -27,14 +27,11 @@ disk = "50M"
 ram.build = "150M"
 ram.runtime = "250M"
 
-[install]
-    [install.domain]
-    type = "domain"
-    
+[install]    
     [install.SMTP_HOST]
     ask = "Edit SMTP Host"
     type = "string"
-    default = "__DOMAIN__"
+    default = "Kavita@example.com"
     help = "Edit SMTP Host"
 
     [install.SMTP_port]
@@ -46,7 +43,7 @@ ram.runtime = "250M"
     [install.SMTP_USERNAME]
     ask = "Edit SMTP Username"
     type = "string"
-    default = "User"
+    default = "Username"
     help = "Edit SMTP Username"
 
     [install.SMTP_PASSWORD]
@@ -57,7 +54,7 @@ ram.runtime = "250M"
     [install.SMTP_SENDER_ADDRESS]
     ask = "Edit SMTP Sender address"
     type = "string"
-    default = "__APP__@__DOMAIN__"
+    default = "Kavita@example.com"
     help = "Edit SMTP Sender address"
 
 [resources]
