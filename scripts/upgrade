@@ -14,31 +14,31 @@ source /usr/share/yunohost/helpers
 ynh_script_progression --message="Ensuring downward compatibility..."
 
 # If smtp_host doesn't exist, create it
-if [ -z "${smtp_host":-} ]; then
+if [ -z "${smtp_host:-"} ]; then
 	smtp_host=""
 	ynh_app_setting_set --app=$app --key=smtp_host --value=$smtp_host 
 fi
 
 # If smtp_port doesn't exist, create it
-if [ -z "$smtp_port" ]; then
+if [ -z "${smtp_port:-"} ]; then
 	smtp_port=22
 	ynh_app_setting_set --app=$app --key=smtp_port --value=$smtp_port
 fi
 
 # If smtp_username doesn't exist, create it
-if [ -z "$smtp_username" ]; then
+if [ -z "${smtp_username:-"} ]; then
 	smtp_username=""
 	ynh_app_setting_set --app=$app --key=smtp_username --value=$smtp_username
 fi
 
 # If smtp_password doesn't exist, create it
-if [ -z "$smtp_password" ]; then
+if [ -z "${smtp_password:-"} ]; then
 	smtp_password=""
 	ynh_app_setting_set --app=$app --key=smtp_password --value=$smtp_password
 fi
 
 # If smtp_sender_address doesn't exist, create it
-if [ -z "$smtp_sender_address" ]; then
+if [ -z "${smtp_sender_address:-"} ]; then
 	smtp_sender_address=""
 	ynh_app_setting_set --app=$app --key=smtp_sender_address --value=$smtp_sender_address
 fi
