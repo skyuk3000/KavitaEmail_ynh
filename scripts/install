@@ -12,20 +12,20 @@ source /usr/share/yunohost/helpers
 #=================================================
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
-SMTP_HOST=""
-SMTP_port=22
-SMTP_USERNAME=""
-SMTP_PASSWORD=""
-SMTP_SENDER_ADDRESS=""
+smtp_host=""
+smtp_port=22
+smtp_username=""
+smtp_password=""
+smtp_sender_address=""
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
-ynh_app_setting_set --app=$app --key=SMTP_HOST --value=$SMTP_HOST
-ynh_app_setting_set --app=$app --key=SMTP_port --value=$SMTP_port
-ynh_app_setting_set --app=$app --key=SMTP_USERNAME --value=$SMTP_USERNAME
-ynh_app_setting_set --app=$app --key=SMTP_PASSWORD --value=$SMTP_PASSWORD
-ynh_app_setting_set --app=$app --key=SMTP_SENDER_ADDRESS --value=$SMTP_SENDER_ADDRESS
+ynh_app_setting_set --app=$app --key=SMTP_HOST --value=$smtp_host
+ynh_app_setting_set --app=$app --key=SMTP_port --value=$smtp_port
+ynh_app_setting_set --app=$app --key=SMTP_USERNAME --value=$smtp_username
+ynh_app_setting_set --app=$app --key=SMTP_PASSWORD --value=$smtp_password
+ynh_app_setting_set --app=$app --key=SMTP_SENDER_ADDRESS --value=$smtp_sender_address
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
