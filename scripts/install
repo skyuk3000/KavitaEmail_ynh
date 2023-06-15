@@ -12,11 +12,11 @@ source /usr/share/yunohost/helpers
 #=================================================
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
-smtp_host=""
-smtp_port=22
-smtp_username=""
-smtp_password=""
-smtp_sender_address=""
+smtp_host=$YNH_APP_ARG_SMTP_HOST
+smtp_port=$YNH_APP_ARG_SMTP_PORT
+smtp_username=$YNH_APP_ARG_SMTP_USERNAME
+smtp_password=$YNH_APP_ARG_smtp_password
+smtp_sender_address=$YNH_APP_ARG_SMTP_PASSWORD
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
