@@ -10,6 +10,25 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# RETRIEVE ARGUMENTS FROM THE MANIFEST
+#=================================================
+
+SMTP_HOST=""
+SMTP_port=22
+SMTP_USERNAME=""
+SMTP_PASSWORD=$YNH_APP_ARG_PASSWORD
+SMTP_SENDER_ADDRESS=""
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+ynh_app_setting_set --app=$app --key=SMTP_HOST --value=$SMTP_HOST
+ynh_app_setting_set --app=$app --key=SMTP_port --value=$SMTP_port
+ynh_app_setting_set --app=$app --key=SMTP_USERNAME --value=$SMTP_USERNAME
+ynh_app_setting_set --app=$app --key=SMTP_PASSWORD --value=$SMTP_PASSWORD
+ynh_app_setting_set --app=$app --key=SMTP_SENDER_ADDRESS --value=$SMTP_SENDER_ADDRESS
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
