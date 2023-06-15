@@ -16,6 +16,7 @@ services = ["__APP__"]
         ask = "Edit SMTP Port"
         type = "number"
         help = "Edit SMTP Port"
+        bind = "port:__FINALPATH__/config/appsettings.json"
 
         [main.config.smtp_username]
         ask = "Edit SMTP Username"
