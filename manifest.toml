@@ -31,7 +31,7 @@ ram.runtime = "250M"
     [install.smtp_host]
     ask = "Edit SMTP Host"
     type = "string"
-    default = ""
+    #default = ""
     help = "Edit SMTP Host"
 
     [install.smtp_port]
@@ -43,7 +43,7 @@ ram.runtime = "250M"
     [install.smtp_username]
     ask = "Edit SMTP Username"
     type = "string"
-    default = ""
+    #default = ""
     help = "Edit SMTP Username"
 
     [install.smtp_password]
@@ -54,7 +54,7 @@ ram.runtime = "250M"
     [install.smtp_sender_address]
     ask = "Edit SMTP Sender address"
     type = "string"
-    default = ""
+    #default = ""
     help = "Edit SMTP Sender address"
 
 [resources]
