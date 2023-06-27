@@ -62,12 +62,12 @@ ram.runtime = "250M"
  [resources.sources]
     [resources.sources.main]
     in_subdir = true
-    armhf.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.19.0/kavitaemail-linux-arm.tar.gz"
+    armhf.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.20.0/kavitaemail-linux-arm.tar.gz"
     armhf.sha256 = "tba"
-    amd64.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.19.0/kavitaemail-linux-x64.tar.gz"
-    amd64.sha256 = "601e4cc52cc28650b63525e68763c04eb8ea97730b445f36db9801ee9ad89fb1"
-    arm64.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.19.0/kavitaemail-linux-arm64.tar.gz"
-    arm64.sha256 = "69950777857aa498b507e89bde0b711b707d117b2c60293b49e8da9851b10d9d"
+    amd64.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.20.0/kavitaemail-linux-x64.tar.gz"
+    amd64.sha256 = "tba"
+    arm64.url = "https://github.com/Kareadita/KavitaEmail/releases/download/v0.1.20.0/kavitaemail-linux-arm64.tar.gz"
+    arm64.sha256 = "tba"
 
     [resources.ports]
     main.default = 5003
