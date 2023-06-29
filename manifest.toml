@@ -30,32 +30,7 @@ ram.runtime = "250M"
 [install]    
     [install.smtp_host]
     ask = "Edit SMTP Host"
-    type = "string"
-    #default = ""
-    help = "Edit SMTP Host"
-
-    [install.smtp_port]
-    ask = "Edit SMTP Port"
-    type = "number"
-    default = "25"
-    help = "Edit SMTP Port"
-
-    [install.smtp_username]
-    ask = "Edit SMTP Username"
-    type = "string"
-    #default = ""
-    help = "Edit SMTP Username"
-
-    [install.smtp_password]
-    help.en = "Enter SMTP password"
-    help.fr = "Entrer le mot de passe RCON"
-    type = "password"
-
-    [install.smtp_sender_address]
-    ask = "Edit SMTP Sender address"
-    type = "string"
-    #default = ""
-    help = "Edit SMTP Sender address"
+    type = "domain"
 
 [resources]
 
